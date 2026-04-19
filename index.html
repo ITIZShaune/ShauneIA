@@ -40,12 +40,12 @@
         let firebaseConfig = {};
         try {
             firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
-                apiKey: "VOTRE_API_KEY",
-                authDomain: "VOTRE_PROJET.firebaseapp.com",
-                projectId: "VOTRE_PROJET",
-                storageBucket: "VOTRE_PROJET.appspot.com",
-                messagingSenderId: "VOTRE_ID",
-                appId: "VOTRE_APP_ID"
+                apiKey: "AIzaSyDKi9twN2oJYy_t0GJCBWvAjEqzXNZDhRk",
+                authDomain: "shauneia-10301.firebaseapp.com",
+                projectId: "shauneia-10301",
+                storageBucket: "shauneia-10301.firebasestorage.app",
+                messagingSenderId: "1046149320765",
+                appId: "1:1046149320765:web:a4ff9e9db7c0cb50161a54"
             };
         } catch(e) { console.warn("Firebase config non trouvée"); }
 
@@ -53,7 +53,7 @@
         const apiKey = ""; // La clé Gemini API doit être gérée via un backend ou fournie ici pour test
 
         // Initialisation sécurisée
-        if (firebaseConfig.apiKey && firebaseConfig.apiKey !== "VOTRE_API_KEY") {
+        if (firebaseConfig.apiKey && firebaseConfig.apiKey !== "AIzaSyDKi9twN2oJYy_t0GJCBWvAjEqzXNZDhRk") {
             if (!window.firebase.apps.length) {
                 window.firebase.initializeApp(firebaseConfig);
             }
